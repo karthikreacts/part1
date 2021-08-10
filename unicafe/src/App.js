@@ -15,7 +15,12 @@ const Statistics = ({ good, neutral, bad, total }) => {
         <p>Positive feedbacks received is {(good / total) * 100} %</p>
       </div>
     );
-  else return <p>Enter feedback about us</p>;
+  else return (
+    <div>
+      <h2>Statistics</h2>
+      <p>No feedbacks given</p>
+    </div>
+  )
 };
 
 const App = () => {
